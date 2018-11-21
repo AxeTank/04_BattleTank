@@ -1,3 +1,5 @@
 # 04_BattleTank
 
-* 01_Setting Up a GitHub "Repo"
+* Setting Up a GitHub "Repo"
+* Creating and Deleting Landscapes
+* Landscape Setup and Scaling
