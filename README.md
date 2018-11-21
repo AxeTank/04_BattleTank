@@ -7,3 +7,4 @@
 * Upgrading Engine Version
 * Using Landscape Layers
 * Flat Shading Low Poly Landscapes
+* More Landscaping Tools
