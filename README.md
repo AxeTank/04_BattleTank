@@ -17,3 +17,4 @@
 * UI Scale Box, Buttons, and Mouse
 * Controller Ready Navigation
 * Trial Packaging Your Game
+* Delegating to Components
