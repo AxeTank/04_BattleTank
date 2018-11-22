@@ -10,3 +10,4 @@
 * More Landscaping Tools
 * Actors from Multiple Meshes
 * Configuring a Tank
+* 3rd Person Camera Control
