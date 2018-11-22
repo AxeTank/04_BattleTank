@@ -16,3 +16,4 @@
 * Main Menu Screens
 * UI Scale Box, Buttons, and Mouse
 * Controller Ready Navigation
+* Trial Packaging Your Game
