@@ -2,6 +2,7 @@
 
 #include "TankPlayerController.h"
 #include "BattleTank.h"
+#include "../Public/TankPlayerController.h"
 
 void ATankPlayerController::BeginPlay()
 {
@@ -22,7 +23,7 @@ void ATankPlayerController::BeginPlay()
 void ATankPlayerController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//AimTowardsCrosshair();
+	AimTowardsCrosshair();
 }
 
 ATank* ATankPlayerController::GetControlledTank() const
@@ -33,7 +34,22 @@ ATank* ATankPlayerController::GetControlledTank() const
 void ATankPlayerController::AimTowardsCrosshair()
 {
 	if (!GetControlledTank()) { return; }
-	//Get world location linetrace through crosshair
-	//if it hits the landscape
-		//tell controlled tank to aim at this point
+	
+	FVector HitLocation; // Out parameter
+	if (GetSightRayHitLocation(HitLocation)) // has a side effect, is going to ray trace
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Hit Location: %s"), *HitLocation.ToString());
+
+			// TODO tell controlled tank to aim at this point
+	}
+	
 }
+
+// Get world location of linetrace through crosshair, true if hits landscape
+bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLocation) const
+{
+	HitLocation = FVector(1.0);
+	return true;
+}
+
+
