@@ -28,3 +28,4 @@
 * Unify Player & AI Aiming
 * Create Default Sub Objects in C++
 * BlueprintCallable()
+* SuggestProjectileVelocity()
